@@ -71,7 +71,8 @@ POSSIBLE VULNERABLE HOSTS:
 """
     for host in nm.all_hosts():
         print str(host) + " // " + "VULNERABLE"
-        vuln_list.write(str(host))
+        vuln_list_hosts = str(host) + " "
+        vuln_list.write(vuln_list_hosts)
     vuln_list.close()
 
 if __name__ == "__main__":
