@@ -12,7 +12,7 @@ You must also have nmap's smb-vuln-ms17-010.nse script on your nmap/scripts fold
 
 Usage:
 
-root@kali: ~# python ipHunter.py -i <input file>
+root@kali: ~# python ipHunter.py -i <input_file>
 
 The input file can be, for example, a Netdiscover scan output. The script will then run a nmap scan with the following arguments:
 -Pn -sC -p 445 -max-hostgroup 3 -open -script smb-vuln-ms17-010.nse <ip_list>
